@@ -1,4 +1,4 @@
-> [!INFO] 
+> FOREWORD: 
 > Due to working on this whilst being pressed for time, I do not consider this editorial to be up to the standards I have set in the previous contests I've been editor-in-chief of. If there are any explanations here that feel inadequate, feel free to reach out any of the organisers for clarifications. 
 > 
 > For the same reason, this editorial does not contain the solutions to the problems under the 'Hard' label. 
@@ -190,7 +190,7 @@ The premise of the problem seems simple- find the maximum number whose factorial
 2. _**There are values of N for which there exists no number having a factorial with that number of trailing zeroes.**_ 
 	While doing mathematics involving factorials, it should be notes that the number of trailing zeroes depends on the number of multiples of 5 present. For example, `17!`  has 3 trailing zeroes, because it contains 3 multiples of 5. 
 	
-	Hence, in theory, the number of trailing zeroes goes up with the number of multiples 5 has. However, this approach has to be slightly modified to include  **exponents of 5:** for example, `29!` has 5 multiples of 5, but one of them (25) is divisible by 5 twice, and hence `29!` is divisible by 5 six times and will have 6 trailing zeroes instead of 5. Thus, there are ==no numbers with a factorial having 5 trailing zeroes==. Hence, multiples of 25 also need to be accounted for, and the same goes for other mulitples of exponents of 5 too.
+	Hence, in theory, the number of trailing zeroes goes up with the number of multiples 5 has. However, this approach has to be slightly modified to include  **exponents of 5:** for example, `29!` has 5 multiples of 5, but one of them (25) is divisible by 5 twice, and hence `29!` is divisible by 5 six times and will have 6 trailing zeroes instead of 5. Thus, there are **no numbers with a factorial having 5 trailing zeroes**. Hence, multiples of 25 also need to be accounted for, and the same goes for other mulitples of exponents of 5 too.
 	
 	There is a good read on finding the number of trailing zeroes in the factorial of a number by [Brilliant.org](https://brilliant.org/wiki/trailing-number-of-zeros/), and the formula that is used to find this out is as follows:
 	 
@@ -269,7 +269,7 @@ Now, onto the question- we have been asked to find the minimum number of moves r
 
 
 
-> [!What is a subsequence?] 
+> !What is a subsequence? 
 > A subsequence of a given sequence is a sequence that can be derived from the given sequence by deleting some or no elements without changing the order of the remaining elements. 
 > 
 > For example,  `101` is a subsequence of `11011`, because if we delete bits from `11011` as shown:
@@ -284,7 +284,7 @@ Therefore, we need to obtain a string where **there are no alternating bits pres
 
 Case 3 and 4 are covered as special cases of 1 and 2, and hence need not be accounted for seperately.
 
-Thus, the new problem now is ==to find the minimum number of moves to convert the given string into any of the 2 aforementioned forms.== To do this, we find out the total number of `1`'s and `0`'s present in the string, then iterate through the string maintaining an count of `1`'s and `0`'s encountered in the string upto the current position of the iterator, say `i`, and use them to calculate the number of changes we would need to make to convert the string to any of the two forms (with the point of change being the `i`<sup>th</sup> bit), and take the minimum between them.
+Thus, the new problem now is **to find the minimum number of moves to convert the given string into any of the 2 aforementioned forms.** To do this, we find out the total number of `1`'s and `0`'s present in the string, then iterate through the string maintaining an count of `1`'s and `0`'s encountered in the string upto the current position of the iterator, say `i`, and use them to calculate the number of changes we would need to make to convert the string to any of the two forms (with the point of change being the `i`<sup>th</sup> bit), and take the minimum between them.
 
 This logic is best understood by an example. Say the string we take is `6699696`. 
 
