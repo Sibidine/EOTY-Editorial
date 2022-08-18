@@ -6,7 +6,7 @@
 
 ## Toh chaliye shuru karte hai
 
-![[Pasted image 20220814220902.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220814220902.png)
 
 The core problem here seems simple- given an integer `A`, we need to find the its largest divisor (excluding the number itself).
 
@@ -55,7 +55,7 @@ signed main(){
 
 ## ED hai toh mumkin hai
 
-![[Pasted image 20220814223425.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220814223425.png)
 
 This problem has constraints lenient enough that it can be brute forced. The code is pretty self-explanatory and there really is no real twist to this problem- just going through every element present in the array and checking if they're divisible by the length of the array works.
 
@@ -105,7 +105,7 @@ int main() {
 
 ## Maths exam abhi baaki hai
 
-![[Pasted image 20220814224230.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220814224230.png)
 
 Looking past the intimidating nomenclature of bit manipulation problems (seriously though, it can't be _only_ me that gets anxiety reading the word "setbit"), the course of action for this problem can be visualised easily with a few examples:
 
@@ -131,10 +131,10 @@ Implementing this logic is simple- we count the number of `1`'s in the binary re
 
 Now that the core logic has been deduced, a couple of edge cases need to be looked out for.
 
-- _==Edgecase for 0:==_
+- _Edgecase for 0:_
 	With no bits getting flipped, our code would end up returning -1 for 0 if not accounted for.
 
-- _==Size of input:==_
+- _Size of input:_
 	Note that the size of inputs goes upto 10<sup>15</sup>: **greater than the size limit for the integer data type.** Using a bigger data type like `long long` would make more sense here. The same issue will arise if builtin functions like `__builtin_popcount()` are used- they expect `int` as input, nad hence would result in an overflow error.
 
 
@@ -180,7 +180,7 @@ int main()
 
 ## Salary kitna loge
 
-![[Pasted image 20220817000938.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220817000938.png)
 
 The premise of the problem seems simple- find the maximum number whose factorial has a given number of trailing zeroes. Before delving into any logic, there are two observations that must be made:
 
@@ -259,7 +259,7 @@ signed main()
 
 ## Ka!bhi 6 Kabhi 9
 
-![[Pasted image 20220817102410.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220817102410.png)
 
 This problem would be a little easier to visualise if we read the string as a binary one. We can do so by replacing all the `6`'s with `1`'s and  `9`'s with `0`'s respectively. 
 
@@ -269,7 +269,7 @@ Now, onto the question- we have been asked to find the minimum number of moves r
 
 
 
-> !What is a subsequence? 
+> What is a subsequence? 
 > A subsequence of a given sequence is a sequence that can be derived from the given sequence by deleting some or no elements without changing the order of the remaining elements. 
 > 
 > For example,  `101` is a subsequence of `11011`, because if we delete bits from `11011` as shown:
@@ -360,7 +360,7 @@ signed main()
 
 ## Telegram University aspirant
 
-![[Pasted image 20220814232230.png]]
+![alt text](https://github.com/Sibidine/EOTY-Editorial/blob/main/Pasted%20image%2020220814232230.png)
 
 Despite the rather verbose nature of the question, there is a simple and elegant one-size-fits-all solution to this problem.
 
